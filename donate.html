@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="donate.css">
+        <title>Donate</title>
+    </head>
+
+    <body>
+        <nav class="donate-nav">
+            <div class="goback-button" onclick="window.location.href='index.html'">
+                <img src="./assets/Go Back.png">
+            </div>
+            <div class="donate-header">
+                <div class="header-section-left">Donation</div>
+                <div class="header-section-right">Bulletin Board</div>
+            </div>
+            <div class="invi-div"></div>
+        </nav>
+        <div class="main-content">
+            <div id="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="content-divider">
+                        <div class="modal-contact">
+                            <img src="./assets/Phone.png"> <p id="contact-num"></p>
+                        </div>
+                        <div class="story-portion">
+                            <p id="story-para">Some text in the Modal..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal2">
+                <div class="modal-content2">
+                    Oops... Looks like there are no more donations. Come back later for possibly new requests.
+                </div>
+            </div>
+
+            <div class="instruction-text">Click to reveal story</div>
+            <div class="choices-section">
+
+                <div class="donation-box" id="box1" onclick="revealModal('box1')">
+                    <div class="type-icon">
+                        <img class="icon-img" src="./assets/Users.png" style="margin-bottom: 10px;">
+                    </div>
+                    <div class="picture-portion" style="background-image: url(./assets/fire.jpg);"></div>
+                    <div class="info-portion">
+                        <div class="donation-type">Community</div>
+                        <div class="donation-name">Clothing for Barangay 119 House Fire Victims</div>
+                        <div class="donation-origin">
+                            <img src="./assets/Person.png">
+                            Brgy. Captain Lorenzo
+                        </div>
+                    </div>
+                </div>
+
+                <div class="donation-box" id="box2" onclick="revealModal('box2')">
+                    <div class="type-icon">
+                        <img class="icon-img" src="./assets/Medical.png">
+                    </div>
+                    <div class="picture-portion" style="background-image: url(./assets/sister.jpg);"></div>
+                    <div class="info-portion">
+                        <div class="donation-type">Medical</div>
+                        <div class="donation-name">Heart Transplant Surgery for my little Sister</div>
+                        <div class="donation-origin">
+                            <img src="./assets/Person.png">
+                            Joseph Hernandez
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="donation-box" id="box3" onclick="revealModal('box3')">
+                    <div class="type-icon">
+                        <img class="icon-img" src="./assets/Graduation Cap.png">
+                    </div>
+                    <div class="picture-portion" style="background-image: url(./assets/books.jpg);"></div>
+                    <div class="info-portion">
+                        <div class="donation-type">Education</div>
+                        <div class="donation-name">Magayunon Elementary School needs more books</div>
+                        <div class="donation-origin">
+                            <img src="./assets/Person.png">
+                            Principal Giordano
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="next-button" onclick="nextClicked()">Next</button>
+        </div>
+        <script src="donate.js"></script>
+    </body>
+</html>

@@ -1,0 +1,300 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.goback-button {
+    cursor: pointer;
+}
+
+.goback-button img{
+    width: 75px;
+}
+
+.donate-header {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: #7694FF;
+}
+
+.header-section-right {
+    background-color: #7694FF;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+.invi-div {
+    width: 75px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+}
+
+.instruction-text {
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.choices-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+}
+
+.donation-box {
+    position: relative;
+    height: 620px;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform .2s
+}
+
+.donation-box:hover {
+    transform: scale(1.07);
+}
+
+.type-icon {
+    position: absolute;
+    display: flex;
+    right: 15px;
+    bottom: 170px;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: rgba(156, 156, 156, 0.50);
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
+    background-color: white;
+    z-index: 1;
+    border-radius: 100px;
+    /*background-image: url(./assets/Users.png);
+    background-repeat: no-repeat;
+    background-position: center center;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-img {
+    
+}
+
+.picture-portion {
+    position: relative;
+    object-fit: fill;
+    height: 400px;
+    width: 500px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.info-portion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.donation-type {
+    color: #000;
+    font-family: Judson;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.donation-name {
+    width: 420px;
+    color: #000;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+.donation-origin {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Judson;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.next-button {
+    margin-top: 40px;
+    box-sizing: border-box;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    background: #7694FF;
+    border: 1px solid #7694FF;
+    border-radius: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+#modal {
+    display: none; /* Hidden by default */
+    opacity: 0;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all 0.2s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 12.5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px; /* Could be more or less, depending on screen size */
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-divider {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-contact {
+    display: flex;
+    font-family: Judson;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-indent: 25px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+    align-items: center;
+    box-shadow:  0 4px 4px -4px rgba(0,0,0,0.25);
+}
+
+.modal-contact p {
+    margin-left: -15px;
+}
+
+.story-portion {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#story-para {
+    font-family: Judson;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    text-indent: each-line;
+}
+
+#modal2 {
+    display: none; /* Hidden by default */
+    opacity: 0;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all 0.2s;
+}
+
+.modal-content2 {
+    background-color: #f06969;
+    margin: 12.5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 1000px; /* Could be more or less, depending on screen size */
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 2px rgba(0, 0, 0, 0.25);
+
+    font-family: Judson;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-indent: 25px;
+    color: white;
+}

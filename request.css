@@ -1,0 +1,223 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-divider {
+    position: inherit;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-div {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+}
+
+.right-div {
+    position: relative;
+    width: 40%;
+    background-color: #7694FF;
+    background-image: url(./assets/joel-muniz-BErJJL_KsjA-unsplash\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.right-div-bgcolor {
+    position: relative;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #7694FF;
+}
+
+.request-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+.goback-button {
+    cursor: pointer;
+}
+
+.goback-button img{
+    width: 75px;
+}
+
+.request-header {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    
+    font-family: 'Judson';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+    color: #7694FF;
+}
+
+.invi-div {
+    width: 75px;
+}
+
+.form-container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    color: #000;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-portion, .email-portion, .contact-portion, .donation-portion-title, .donation-portion-type, .story-portion {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.donation-portion {
+    padding-top: 40px;
+    display: flex;
+    gap: 40px
+}
+
+#fname, #femail, #fcontact, #ftitle, #fstory {
+    width: 620px;
+    height: 35px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+#femail, #fcontact, #ftitle{
+    width: 340px;
+}
+
+#ftype {
+    width: 240px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+#fstory {
+    height: 160px;
+    resize: none;
+}
+
+.confirm-portion {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+    font-family: Judson;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    /*-webkit-appearance: none;
+    appearance: none;
+    margin: 0;*/
+
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #a1a1a1;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+
+.confirm-portion:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.confirm-portion input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: relative;
+    display: none;
+}
+  
+
+.confirm-portion input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.confirm-portion .checkmark:after {
+    top: 2px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0px 3px 3px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.submit-portion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    background: #7694FF;
+}
